@@ -54,7 +54,7 @@ function HomeComponent() {
                     transition={{ delay: 0.8, duration: 1 }}
                     className="text-base md:text-lg lg:text-xl text-white text-center"
                 >
-                    AI Tools Coming soon... Till then Xplore
+                    AI Tools Coming soon... till then Xplore
                 </motion.p>
                 <div className="flex space-x-2">
                     <Link href={'/ainews'} className="text-black font-semibold">AI News</Link>

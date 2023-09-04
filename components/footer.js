@@ -46,7 +46,7 @@ function Footer() {
                 <div className="text-center text-gray-400">
                     <p>&copy; {new Date().getFullYear()} All Rights Reserved</p>
                     <Spacer y={2} />
-                    <p>Xploring AI World!</p>
+                    <p>Xploring AI World!!!!</p>
                 </div>
 
             </div>

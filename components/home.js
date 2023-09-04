@@ -45,7 +45,7 @@ function HomeComponent() {
                     transition={{ delay: 0.5, duration: 1 }}
                     className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 text-center"
                 >
-                    Welcome to
+                    Welcome to Hello World
                     <p>Xploring AI World</p>
                 </motion.p>
                 <motion.p

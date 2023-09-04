@@ -39,7 +39,7 @@ function HomeComponent() {
             </div>
 
             <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center py-10">
-                <motion.p
+                <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5, duration: 1 }}
@@ -47,7 +47,7 @@ function HomeComponent() {
                 >
                     <p>Welcome to</p> 
                     <p>Xploring AI World</p>
-                </motion.p>
+                </motion.div>
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}

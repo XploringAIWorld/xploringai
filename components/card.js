@@ -11,6 +11,7 @@ export default function CardComponent(props) {
             const domain = new URL(url).hostname;
             console.log("domain")
             console.log("domain2")
+            console.log("domain3")
             return domain.replace(/^www\./, '');
         } catch (error) {
             console.error('Invalid URL:', error.message);

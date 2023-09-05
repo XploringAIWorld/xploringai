@@ -5,7 +5,7 @@ import AinewsComponent from "@/components/ainews-component";
 import { Suspense } from "react";
 export const metadata = {
   title: "Xploring AI World | AI News",
-  description: "Stay informed with the latest AI news from around the world. Get insights into breakthroughs, research, and advancements in artificial intelligence. Stay ahead in the dynamic field of AI by exploring our comprehensive coverage of AI-related topics and developments."
+  description: "Xploring AI World | Stay informed with the latest AI news from around the world. Get insights into breakthroughs, research, and advancements in artificial intelligence. Stay ahead in the dynamic field of AI by exploring our comprehensive coverage of AI-related topics and developments."
 }
 
 function AINews() {

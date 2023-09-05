@@ -5,7 +5,7 @@ import HomeComponent from "@/components/home";
 
 export const metadata = {
     title: "Xploring AI World | Home",
-    description: "Welcome to Xploring AI - Your Gateway to Artificial Intelligence and Technology Insights. Explore the latest AI tools, AI news, and tech updates. Stay informed about groundbreaking advancements, trends, and innovations that are shaping the future of AI and technology."
+    description: "Welcome to Xploring AI World - Your Gateway to Artificial Intelligence and Technology Insights. Explore the latest AI tools, AI news, and tech updates. Stay informed about groundbreaking advancements, trends, and innovations that are shaping the future of AI and technology."
 }
 
 const Home = () => {

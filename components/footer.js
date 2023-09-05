@@ -38,7 +38,7 @@ function Footer() {
 
                 </div>
                 <div className="flex text-gray-400">
-                    <p>Terms Of Use</p>
+                    <p>Terms Of Use.</p>
                     <Spacer x={2} />
                     <p>Privacy Policy</p>
                 </div>

@@ -9,6 +9,7 @@ export default function CardComponent(props) {
     const extractDomain = (url) => {
         try {
             const domain = new URL(url).hostname;
+            console.log("domain")
             console.log("domain2")
             return domain.replace(/^www\./, '');
         } catch (error) {

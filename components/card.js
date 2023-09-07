@@ -9,9 +9,6 @@ export default function CardComponent(props) {
     const extractDomain = (url) => {
         try {
             const domain = new URL(url).hostname;
-            console.log("domain")
-            console.log("domain2")
-            console.log("domain3")
             return domain.replace(/^www\./, '');
         } catch (error) {
             console.error('Invalid URL:', error.message);
@@ -44,7 +41,7 @@ export default function CardComponent(props) {
         <div>
 
             {
-                sortedPosts.length > 0 ? (
+                
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 p-4">
                         {sortedPosts.slice(0, visiblePosts).map((post, index) => {
 
@@ -93,11 +90,7 @@ export default function CardComponent(props) {
 
 
 
-                ) : (
-                    <div className="flex justify-center items-center min-h-screen">
-                        <p className="text-lg">No posts to show</p>
-                    </div>
-                )
+               
             }
 
             {visiblePosts < sortedPosts.length && (

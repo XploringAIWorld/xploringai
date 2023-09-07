@@ -1,4 +1,5 @@
 
+import Footer from "@/components/footer";
 import HomeComponent from "@/components/home";
 
 
@@ -12,8 +13,8 @@ const Home = () => {
 
     return (
         <div>
-
             <HomeComponent />
+            <Footer/>
         </div>
     );
 };

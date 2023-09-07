@@ -22,11 +22,13 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className}`} style={{ backgroundColor: "hsla(0,0%,0%,1)", backgroundImage: "radial-gradient(at 100% 100%, hsla(212,100%,46%,1) 0px, transparent 50%),radial-gradient(at 0% 0%, hsla(343,0%,0%,1) 0px, transparent 50%)", backgroundAttachment: "fixed" }}>
         <Providers>
           <NavbarComponent />
+          <main>
+
           {children}
+         
+          </main>
         </Providers>
-        <footer>
-          <Footer />
-        </footer>
+       
       </body>
 
     </html>

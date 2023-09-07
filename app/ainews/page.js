@@ -1,4 +1,5 @@
 import CardComponent from "@/components/card";
+import Footer from "@/components/footer";
 import { db } from "@/firebase/config";
 import { collection, getDocs } from "firebase/firestore";
 export const metadata = {
@@ -20,6 +21,7 @@ async function AINews() {
 
   return (
     <div className="min-h-screen">
+      <div className="min-h-screen">
       <p className="text-center text-xl">AI News</p>
       {posts.length > 0 ? (
         <CardComponent posts={posts} />
@@ -28,6 +30,8 @@ async function AINews() {
           <p className="text-lg">No posts to show</p>
         </div>
       )}
+    </div>
+      <Footer/>
     </div>
   );
 }

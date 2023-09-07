@@ -7,12 +7,12 @@ function HomeComponent() {
     const [motionScale, setMotionScale] = useState(0.8);
 
     useEffect(() => {
-        // Change the motion scale automatically after a delay (e.g., 3 seconds)
+      
         const timeout = setTimeout(() => {
             setMotionScale((prevScale) => (prevScale === 0.8 ? 1.2 : 0.8));
-        }, 3000); // Change every 3 seconds, adjust the delay as needed
+        }, 3000);
 
-        // Clean up the timeout when the component unmounts
+    
         return () => clearTimeout(timeout);
     }, [motionScale]);
 

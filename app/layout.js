@@ -10,8 +10,8 @@ import Footer from '@/components/footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: "Xploring AI",
-  description: "Welcome to Xploring AI - Your Gateway to Artificial Intelligence and Technology Insights. Explore the latest AI tools, AI news, and tech updates. Stay informed about groundbreaking advancements, trends, and innovations that are shaping the future of AI and technology."
+  title: "Xploring AI World",
+  description: "Welcome to Xploring AI World - Your Gateway to Artificial Intelligence and Technology Insights. Explore the latest AI tools, AI news, and tech updates. Stay informed about groundbreaking advancements, trends, and innovations that are shaping the future of AI and technology."
 }
 
 export default function RootLayout({ children }) {

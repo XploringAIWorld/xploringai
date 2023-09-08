@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react";
-import { Card, CardHeader, CardBody, CardFooter, Divider, Link } from "@nextui-org/react";
+import { Card, CardHeader, CardBody, CardFooter, Divider, Link ,Button} from "@nextui-org/react";
 
 
 export default function CardComponent(props) {
@@ -95,9 +95,9 @@ export default function CardComponent(props) {
 
             {visiblePosts < sortedPosts.length && (
                 <div className="flex justify-center mt-4 m-4">
-                    <button onClick={loadMorePosts} className="text-blue-600 border border-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md">
+                    <Button onClick={loadMorePosts} color="primary" variant="shadow">
                         Show More
-                    </button>
+                    </Button>
                 </div>
             )}
 

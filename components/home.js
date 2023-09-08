@@ -25,7 +25,7 @@ function HomeComponent() {
                     className="w-full h-full"
                     initial={{ rotate: -10, scale: motionScale === 0.8 ? 1.2 : 0.8 }}
                     animate={{
-                        rotate: motionScale === 0.8 ? -10 : 0, // Rotate when the scale changes
+                        rotate: motionScale === 0.8 ? -10 : 0, 
                         scale: motionScale === 1.2 ? 0.8 : 1.2,
                     }}
                     transition={{ duration: 10, repeat: Infinity }}

@@ -49,12 +49,14 @@ function TechNewsDashboardComponent() {
                                 placeholder="Enter URL"
                                 onChange={(e) => setUrl(e.target.value)}
                                 className="mb-4"
+                                value={url}
                             />
                             <Input
                                 type="text"
                                 placeholder="Enter URL Title"
                                 onChange={(e) => setTitle(e.target.value)}
                                 className="mb-4"
+                                value={title}
                             />
                             <Input
                                 type='date'

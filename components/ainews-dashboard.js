@@ -26,14 +26,16 @@ function AiNewsDashboardComponent() {
                     title,
                     datePicked: pickDate
                 });
-
+                setUrl("")
+                setTitle("")
+                setPickDate("")
+               
             }
-            setUrl('')
-            setTitle('')
-            setPickDate('')
+            
         } catch (error) {
             console.log(error.message)
         }
+       
 
     };
 
@@ -50,12 +52,14 @@ function AiNewsDashboardComponent() {
                                 placeholder="Enter URL"
                                 onChange={(e) => setUrl(e.target.value)}
                                 className="mb-4"
+                                value={url}
                             />
                             <Input
                                 type="text"
                                 placeholder="Enter URL Title"
                                 onChange={(e) => setTitle(e.target.value)}
                                 className="mb-4"
+                                value={title}
                             />
                             <Input
                                 type='date'

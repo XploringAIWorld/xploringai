@@ -21,21 +21,21 @@ async function AINews() {
   });
 
   return (
-
+   
       <div className="min-h-screen">
-      <p className="text-center text-xl">AI News</p>
-      {posts.length > 0 ? (
-       
-          <CardComponent posts={posts} />
-     
-      ) : (
-        <div className="flex justify-center items-center min-h-screen">
-          <p className="text-lg">No posts to show</p>
-        </div>
-      )}
-    </div>
+        <p className="text-center text-xl">AI News</p>
+        {posts.length > 0 ? (
+        
 
-  
+            <CardComponent posts={posts} />
+
+        ) : (
+          <div className="flex justify-center items-center min-h-screen">
+            <p className="text-lg">No posts to show</p>
+          </div>
+        )}
+      </div>
+       
   );
 }
 

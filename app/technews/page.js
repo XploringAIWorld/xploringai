@@ -31,7 +31,7 @@ async function TechNews() {
 
         ) : (
           <div className="flex justify-center items-center min-h-screen">
-            <p className="text-lg">No posts to show</p>
+            <p className="text-lg">No Tech News to show</p>
           </div>
         )}
       </div>

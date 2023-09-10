@@ -1,9 +1,8 @@
 'use client'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { db } from '@/firebase/config';
-import { updateDoc,  doc, deleteDoc } from 'firebase/firestore';
+import { updateDoc, onSnapshot, collection, doc, deleteDoc } from 'firebase/firestore';
 import { useSearchParams } from 'next/navigation';
-import { useRouter } from 'next/navigation';
 import {
     Input,
     Button,
@@ -16,13 +15,18 @@ import {
     Spacer,
 } from '@nextui-org/react';
 
-function AINewsPostsComponent({posts}) {
-    const router = useRouter()
+function AINewsPostsComponent() {
+    const [posts, setPosts] = useState([]);
     const MY_TOKEN = process.env.NEXT_PUBLIC_TOKEN;
     const searchParams = useSearchParams();
     const token = searchParams.get('token');
 
-   
+    useEffect(() => {
+        const unsubscribe = onSnapshot(collection(db, 'ainews'), (snapshot) => {
+            setPosts(snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+        });
+        return () => unsubscribe();
+    }, []);
 
     const [editMode, setEditMode] = useState(false);
     const [editId, setEditId] = useState(null);
@@ -60,12 +64,10 @@ function AINewsPostsComponent({posts}) {
         setEditTitle('');
         setEditUrl('');
         setEditPickDate('');
-        router.refresh()
     };
 
     const handleDelete = async (id) => {
         await deleteDoc(doc(db, 'ainews', id));
-        router.refresh()
     };
 
     const extractDomain = (url) => {
